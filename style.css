@@ -1,0 +1,39 @@
+span{
+    transform: rotateX(180deg);
+}
+button {
+    width: max-content;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+}
+.card {
+    width:100px;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: 10px 20px 10px gray;
+    border: 2px solid black;
+    margin: 10px;
+    background: linear-gradient(to right,rgb(7, 236, 7) 20%, yellow);
+    color:linear-gradient(red,blue);
+    font-size: 86px;
+    text-align: center;
+    line-height: 200px;
+    transition: transform 500ms ease-in-out;
+}
+.card:hover {
+    background: linear-gradient(to right,  yellow,rgb(7, 236, 7));
+}
+.toReversCard:not(span) {
+    transform: rotateY(360deg);
+    
+
+}
+
